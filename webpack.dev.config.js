@@ -18,6 +18,15 @@ let dev_config = {
     path: PATHS.dist,
     filename: '[name].js'
   },
+  module: {
+    loaders: [
+      {
+        test: /\.css$/,
+        loaders: ['style', 'css'],
+        include: PATHS.src
+      }
+    ]
+  },
   devServer: {
     contentBase: PATHS.dist,
     historyApiFallback: true,

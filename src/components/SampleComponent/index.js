@@ -1,3 +1,5 @@
+require('./index.css');
+
 module.exports = function () {
   var element = document.createElement('h1');
 
