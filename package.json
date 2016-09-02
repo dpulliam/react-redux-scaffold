@@ -7,9 +7,10 @@
     "test": "echo \"No test specified\"",
     "clean": "rm -rf ./dist",
     "clean:deps": "rm -rf ./node_modules",
-    "build": "node_modules/.bin/webpack --config webpack.prod.config.js",
-    "build:dev": "node_modules/.bin/webpack --config webpack.dev.config.js",
-    "build:prod": "node_modules/.bin/webpack --config webpack.prod.config.js"
+    "build": "webpack --config webpack.prod.config.js",
+    "build:dev": "webpack --config webpack.dev.config.js",
+    "build:prod": "webpack --config webpack.prod.config.js",
+    "start": "webpack-dev-server --config webpack.dev.config.js"
   },
   "repository": {
     "type": "git",
@@ -35,6 +36,10 @@
   "devDependencies": {
     "html-webpack-plugin": "^2.22.0",
     "webpack": "^1.13.2",
+    "webpack-dev-server": "^1.15.1",
     "webpack-validator": "^2.2.7"
+  },
+  "dependencies": {
+    "dotenv": "^2.0.0"
   }
 }

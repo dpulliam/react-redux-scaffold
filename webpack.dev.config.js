@@ -1,4 +1,7 @@
+require('dotenv').config();
+
 const path = require('path');
+const webpack = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 const validate = require('webpack-validator');
 
@@ -15,9 +18,23 @@ let dev_config = {
     path: PATHS.dist,
     filename: '[name].js'
   },
+  devServer: {
+    contentBase: PATHS.dist,
+    historyApiFallback: true,
+    hot: true,
+    inline: true,
+    stats: {
+      colors: true
+    },
+    host: process.env.HOST,
+    port: process.env.PORT
+  },
   plugins: [
     new HTMLWebpackPlugin({
       title: 'React Redux Scaffold'
+    }),
+    new webpack.HotModuleReplacementPlugin({
+      multiStep: true
     })
   ]
 };
