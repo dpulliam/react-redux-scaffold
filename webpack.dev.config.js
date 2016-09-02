@@ -25,8 +25,8 @@ let dev_config = {
   module: {
     loaders: [
       {
-        test: /\.css$/,
-        loaders: ['style', 'css?sourceMap'],
+        test: /\.scss$/,
+        loaders: ["style", "css?sourceMap", "sass?sourceMap"],
         include: PATHS.src
       }
     ]
