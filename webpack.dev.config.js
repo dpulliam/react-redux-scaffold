@@ -52,5 +52,7 @@ let dev_config = {
   ]
 };
 
-module.exports = validate(dev_config);
+module.exports = validate(dev_config, {
+  quiet: true
+});
 
