@@ -12,17 +12,21 @@ const PATHS = {
 
 let dev_config = {
   entry: {
-    src: PATHS.src
+    app: PATHS.src
   },
   output: {
     path: PATHS.dist,
-    filename: '[name].js'
+    publicPath: "/assets/",
+    filename: '[name].js',
+    sourceMapFilename: '[file].map',
+    devtoolModuleFilenameTemplate: 'webpack:///[resource-path]?[loaders]'
   },
+  devtool: 'eval-source-map',
   module: {
     loaders: [
       {
         test: /\.css$/,
-        loaders: ['style', 'css'],
+        loaders: ['style', 'css?sourceMap'],
         include: PATHS.src
       }
     ]
