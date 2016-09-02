@@ -7,7 +7,8 @@ const validate = require('webpack-validator');
 
 const PATHS = {
   src: path.join(__dirname, 'src'),
-  dist: path.join(__dirname, 'dist')
+  dist: path.join(__dirname, 'dist'),
+  img: path.join(__dirname, 'src/assets/images')
 };
 
 let dev_config = {
@@ -28,6 +29,11 @@ let dev_config = {
         test: /\.scss$/,
         loaders: ["style", "css?sourceMap", "sass?sourceMap"],
         include: PATHS.src
+      },
+      {
+        test: /\.(jpg|png)$/,
+        loader: 'url-loader?limit=100000',
+        include: PATHS.img
       }
     ]
   },
