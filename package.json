@@ -4,7 +4,12 @@
   "description": "Project scaffolding for react-redux application",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"No test specified\""
+    "test": "echo \"No test specified\"",
+    "clean": "rm -rf ./dist",
+    "clean:deps": "rm -rf ./node_modules",
+    "build": "node_modules/.bin/webpack --config webpack.prod.config.js",
+    "build:dev": "node_modules/.bin/webpack --config webpack.dev.config.js",
+    "build:prod": "node_modules/.bin/webpack --config webpack.prod.config.js"
   },
   "repository": {
     "type": "git",
@@ -28,6 +33,7 @@
   },
   "homepage": "https://github.com/dpulliam/react-redux-scaffold#readme",
   "devDependencies": {
+    "html-webpack-plugin": "^2.22.0",
     "webpack": "^1.13.2"
   }
 }
