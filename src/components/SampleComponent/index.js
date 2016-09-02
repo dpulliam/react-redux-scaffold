@@ -1,9 +1,9 @@
-require('./index.scss');
+require('./index.scss')
 
 module.exports = function () {
-  var element = document.createElement('h1');
+  var element = document.createElement('h1')
 
-  element.innerHTML = 'Good Times Good People';
+  element.innerHTML = 'Good Times Good People'
 
-  return element;
-};
+  return element
+}

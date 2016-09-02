@@ -1,4 +1,4 @@
-var SampleComponent = require('./components/SampleComponent');
+var SampleComponent = require('./components/SampleComponent')
 
-document.body.appendChild(SampleComponent());
+document.body.appendChild(SampleComponent())
 
