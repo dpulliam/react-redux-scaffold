@@ -34,6 +34,7 @@
   "homepage": "https://github.com/dpulliam/react-redux-scaffold#readme",
   "devDependencies": {
     "html-webpack-plugin": "^2.22.0",
-    "webpack": "^1.13.2"
+    "webpack": "^1.13.2",
+    "webpack-validator": "^2.2.7"
   }
 }
