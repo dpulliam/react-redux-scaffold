@@ -1,0 +1,30 @@
+{
+  "name": "react-redux-scaffold",
+  "version": "1.0.0",
+  "description": "Project scaffolding for react-redux application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dpulliam/react-redux-scaffold.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "flux",
+    "webpack",
+    "babel",
+    "es6",
+    "es2015",
+    "scaffold",
+    "template"
+  ],
+  "author": "dylan pulliam",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dpulliam/react-redux-scaffold/issues"
+  },
+  "homepage": "https://github.com/dpulliam/react-redux-scaffold#readme"
+}
