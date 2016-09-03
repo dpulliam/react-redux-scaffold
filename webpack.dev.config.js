@@ -50,7 +50,8 @@ let dev_config = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      title: 'React Redux Scaffold'
+      title: 'React Redux Scaffold',
+      template: './src/index.ejs'
     }),
     new webpack.HotModuleReplacementPlugin({
       multiStep: true
