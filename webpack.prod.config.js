@@ -20,7 +20,7 @@ let prod_config = {
   },
   output: {
     path: PATHS.public,
-    filename: '[name].js',
+    filename: '[name].[chunkhash].js',
     chunkFilename: '[chunkhash].js',
     devtoolModuleFilenameTemplate: function(info){
     return "file:///"+encodeURI(info.absoluteResourcePath);
