@@ -4,7 +4,7 @@
 * Learn more about configuring React and Redux projects
 * Learn about Babel
 * Learn about Webpack configuration
-* Practice continuous integration with Heroku and Travis
+* Practice continuis integration with Heroku and Travis
 
 The goal of this project was basically to practice configuring some sort of node, webpack, es6 project. 
 
@@ -23,7 +23,7 @@ Use at your own risk!
 
 ## Usage
 ### Setup
-dotenv
+Checkout the ``` .env ``` file for basic setup.
 ### Testing
 ```
 npm run test
@@ -77,6 +77,9 @@ npm run start
 ### Structure
 
 ### Webpack.dev.config vs Webpack.prod.config
+| Feature         | dev         | prod         |
+| -------------   |-------------|------------- |
+|                 |             |
 
 ### Server
 
@@ -87,8 +90,14 @@ npm start
 ```
 
 ### Dependencies
+| Dependecy       | Use         |
+| -------------   |-------------|
+|                 |             |
 
 ## Credits
-http://survivejs.com/webpack/introduction/
-http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html
+The following was super helpful in my learning process. You will find many things that are the same and some smaller stuff I changed for the project. 
+
+[SurviveJS Webpack Tutorial](http://survivejs.com/webpack/introduction/)
+
+[Teropa Full Stack Redux Tutorial](http://teropa.info/blog/2015/09/10/full-stack-redux-tutorial.html)
  
