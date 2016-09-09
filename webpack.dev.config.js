@@ -57,6 +57,16 @@ let dev_config = {
       }
     ]
   },
+  devServer: {
+    contentBase: PATHS.dist,
+    historyApiFallback: true,
+    inline: true,
+    stats: {
+      colors: true
+    },
+    host: process.env.HOST,
+    port: process.env.PORT
+  },
   plugins: [
     new HTMLWebpackPlugin({
       title: 'React Redux Scaffold',
