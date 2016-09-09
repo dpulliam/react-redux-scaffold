@@ -4,7 +4,7 @@ var path = require('path');
 var app = express();
 
 var port = process.env.PORT || 9090;
-var publicPath = path.resolve(__dirname, '../dist');
+var publicPath = path.resolve(__dirname, '../public');
 
 // We point to our static assets
 app.use(express.static(publicPath));

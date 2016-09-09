@@ -7,7 +7,7 @@ const validate = require('webpack-validator');
 
 const PATHS = {
   src: path.join(__dirname, 'src'),
-  dist: path.join(__dirname, 'dist'),
+  public: path.join(__dirname, 'public'),
   img: path.join(__dirname, 'src/assets/images')
 };
 
@@ -16,7 +16,7 @@ let dev_config = {
     app: PATHS.src
   },
   output: {
-    path: PATHS.dist,
+    path: PATHS.public,
     filename: '[name].js',
     sourceMapFilename: '[file].map',
     devtoolModuleFilenameTemplate: 'webpack:///[resource-path]?[loaders]'
