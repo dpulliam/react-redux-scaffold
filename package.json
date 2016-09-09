@@ -14,7 +14,6 @@
     "clean:deps": "rm -rf ./node_modules",
     "build": "npm run clean && $(npm bin)/webpack --config webpack.prod.config.js",
     "build:dev": "$(npm bin)/webpack --config webpack.dev.config.js",
-    "heroku-postbuild": "npm build",
     "start": "node ./server/server.js",
     "start:dev": "$(npm bin)/webpack-dev-server --config webpack.dev.config.js",
     "stats": "$(npm bin)/webpack --config webpack.prod.config.js --profile --json > stats.json"
