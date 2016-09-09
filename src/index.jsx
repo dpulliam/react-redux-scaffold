@@ -14,7 +14,7 @@ const routes = <Route component={App}>
   <Route path="/" component={SampleComponent} />
 </Route>
 
-const socket = io(`${location.protocol}//${location.hostname}:9080`);
+//const socket = io(`${location.protocol}//${location.hostname}:9090`);
 
 ReactDOM.render(
   <Provider store={store}>

@@ -8,7 +8,6 @@ const validate = require('webpack-validator');
 const PATHS = {
   src: path.join(__dirname, 'src'),
   dist: path.join(__dirname, 'dist'),
-  test: path.join(__dirname, 'test'),
   img: path.join(__dirname, 'src/assets/images')
 };
 
@@ -18,7 +17,6 @@ let dev_config = {
   },
   output: {
     path: PATHS.dist,
-    publicPath: "/assets/",
     filename: '[name].js',
     sourceMapFilename: '[file].map',
     devtoolModuleFilenameTemplate: 'webpack:///[resource-path]?[loaders]'
@@ -30,24 +28,21 @@ let dev_config = {
         test: /\.jsx?$/,
         loaders: ['babel'],
         include: [
-          PATHS.src,
-          PATHS.test
+          PATHS.src
         ]
       },
       {
         test: /\.css$/,
         loaders: ['style', 'css?sourceMap'],
         include: [
-          PATHS.src,
-          PATHS.test
+          PATHS.src
         ]
       },
       {
         test: /\.scss$/,
         loaders: ["style", "css?sourceMap", "sass?sourceMap"],
         include: [
-          PATHS.src,
-          PATHS.test
+          PATHS.src
         ]
       },
       {
@@ -61,9 +56,6 @@ let dev_config = {
     new HTMLWebpackPlugin({
       title: 'React Redux Scaffold',
       template: './src/index.ejs'
-    }),
-    new webpack.HotModuleReplacementPlugin({
-      multiStep: true
     })
   ],
   resolve: {

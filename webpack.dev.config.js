@@ -18,7 +18,6 @@ let dev_config = {
   },
   output: {
     path: PATHS.dist,
-    publicPath: "/assets/",
     filename: '[name].js',
     sourceMapFilename: '[file].map',
     devtoolModuleFilenameTemplate: 'webpack:///[resource-path]?[loaders]'
