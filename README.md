@@ -4,7 +4,7 @@
 * Learn more about configuring React and Redux projects
 * Learn about Babel
 * Learn about Webpack configuration
-* Practice continuis integration with Heroku and Travis
+* Practice continuous integration with Heroku and Travis
 
 The goal of this project was basically to practice configuring some sort of node, webpack, es6 project. 
 
@@ -22,8 +22,6 @@ Use at your own risk!
 * Explore other modules and configs
 
 ## Usage
-### Setup
-Checkout the ``` .env ``` file for basic setup.
 ### Testing
 ```
 npm run test
