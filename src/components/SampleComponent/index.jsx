@@ -7,6 +7,7 @@ export default React.createClass({
   render: function() {
     return <div className="SampleComponent">
       <h1> React Redux Scaffolding </h1>
+      <h2> Hello Squirrel! </h2>
     </div>
   }
 })
